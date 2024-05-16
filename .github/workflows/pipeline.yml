@@ -11,4 +11,4 @@ jobs:
     	run: |
       	npm install
       	npm run build
-      	sudo cp -R build/ /var/www/html/[-- project name --]/
+      	sudo cp -R build/ /var/www/html/testreactapp/
