@@ -11,4 +11,3 @@ jobs:
         run: |
           sudo npm install
           sudo npm run build
-          sudo cp -R build/ /var/www/html/testreactapp/
