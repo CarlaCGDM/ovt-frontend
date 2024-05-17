@@ -12,7 +12,7 @@ function App() {
           <torusKnotGeometry />
           <meshNormalMaterial />
         </mesh>
-        <mesh>
+        <mesh position={[1,1,1]}>
           <torusKnotGeometry />
           <meshNormalMaterial />
         </mesh>
