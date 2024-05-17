@@ -12,6 +12,10 @@ function App() {
           <torusKnotGeometry />
           <meshNormalMaterial />
         </mesh>
+        <mesh>
+          <torusKnotGeometry />
+          <meshNormalMaterial />
+        </mesh>
       </Canvas>
     </>
   );
