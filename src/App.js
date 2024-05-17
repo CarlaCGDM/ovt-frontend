@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Canvas>
-        <mesh position={[2,2,2]}>
+        <mesh position={[1,1,1]}>
           <torusKnotGeometry />
           <meshNormalMaterial />
         </mesh>
