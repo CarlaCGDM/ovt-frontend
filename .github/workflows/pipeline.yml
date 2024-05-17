@@ -7,6 +7,9 @@ jobs:
     name: Deploy to Ec2 instance
     runs-on: self-hosted
     steps:
+      - name: Get permissions
+        run: |
+          sudo chown -R $USER:$USER /frontend-actions-runner/ovt-frontend
       - name: Download files from the current repository
         uses: actions/checkout@v2
       - name: TO EC2 instance
