@@ -7,6 +7,8 @@ jobs:
     name: Deploy to Ec2 instance
     runs-on: self-hosted
     steps:
+      - name: Download files from the current repository
+        uses: actions/checkout@v2
       - name: TO EC2 instance
         run: |
           sudo npm install
