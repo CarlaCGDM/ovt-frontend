@@ -12,6 +12,14 @@ function App() {
           <torusKnotGeometry />
           <meshNormalMaterial />
         </mesh>
+        <mesh position={[1,1,1]}>
+          <torusKnotGeometry />
+          <meshNormalMaterial />
+        </mesh>
+        <mesh position={[2,2,2]}>
+          <torusKnotGeometry />
+          <meshNormalMaterial />
+        </mesh>
       </Canvas>
     </>
   );
