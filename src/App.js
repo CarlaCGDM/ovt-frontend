@@ -9,7 +9,6 @@ function App() {
     <>
       <Canvas>
         <mesh>
-          <p>testing actions runner</p>
           <torusKnotGeometry />
           <meshNormalMaterial />
         </mesh>
