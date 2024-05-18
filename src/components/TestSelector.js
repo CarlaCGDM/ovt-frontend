@@ -8,16 +8,15 @@ function TestSelector() {
   useEffect(() => {
     setExhibitListLoading(true);
 
-    ExhibitAPI.get()
+    ExhibitAPI.getAll()
       .then((exhibitList) => {
         setExhibitList(exhibitList);
       })
       .finally(() => {
+        console.log(exhibitList)
         setExhibitListLoading(false);
       });
   }, []);
-
-  console.log(exhibitList)
 
   return (
     <>
