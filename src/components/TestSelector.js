@@ -8,7 +8,7 @@ function TestSelector() {
   useEffect(() => {
     setExhibitListLoading(true);
 
-    ExhibitAPI.get()
+    ExhibitAPI.getAll()
       .then((exhibitList) => {
         setExhibitList(exhibitList);
       })
