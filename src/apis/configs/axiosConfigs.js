@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const api = axios.create({
   withCredentials: true,
-  baseURL: "http://3.225.226.55:4000/api/",
+  baseURL: "https://openvirtualtours.org/api/",
 })
 
 // defining a custom error handler for all APIs
