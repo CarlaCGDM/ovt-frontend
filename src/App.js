@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Canvas } from '@react-three/fiber';
-import * as THREE from 'three';
 import TestAPICall from './components/TestAPICall';
 
 function App() {
