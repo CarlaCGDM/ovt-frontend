@@ -6,14 +6,14 @@ function TestAPICall() {
 
   useEffect(() => {
     ExhibitAPI.getAll()
-      .then((exhibitList) => {
-        setExhibitList(exhibitList);
+      .then((response) => {
+        setExhibitList(response.data);
+      }).finally(() => {
+        console.log(exhibitList);
+      }).catch(error => {
+        console.error(error)
       })
   }, []);
-
-  useEffect(() => {
-    console.log(exhibitList)
-  }, [exhibitList]);
 
   return (
     <>
