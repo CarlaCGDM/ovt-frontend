@@ -8,16 +8,20 @@ function TestAPICall() {
     ExhibitAPI.getAll()
       .then((response) => {
         setExhibitList(response.data);
-        console.log(exhibitList);
       }).catch(error => {
         console.error(error)
       })
   }, []);
 
+  useEffect(() => {
+    console.log(exhibitList)
+  }, [exhibitList]);
+
   return (
     <>
+        <div>Hello.</div>
     </>
   );
 }
 
-export default TestAPICall;
+export default TestSelector;
