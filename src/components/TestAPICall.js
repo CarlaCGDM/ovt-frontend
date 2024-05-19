@@ -6,8 +6,8 @@ function TestAPICall() {
 
   useEffect(() => {
     ExhibitAPI.getAll()
-      .then((response) => {
-        setExhibitList(response.data);
+      .then((data) => {
+        setExhibitList(data);
       }).catch(error => {
         console.error(error)
       })
