@@ -7,6 +7,7 @@ function TestAPICall() {
   useEffect(() => {
     ExhibitAPI.getAll()
       .then((data) => {
+        console.log(data)
         setExhibitList(data);
       })
   }, []);
@@ -14,7 +15,6 @@ function TestAPICall() {
   return (
     <>
         <div>Hello</div>
-        {exhibitList.length > 0 && <div>{exhibitList[0]?.name}</div>}
     </>
   );
 }
