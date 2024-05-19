@@ -15,6 +15,7 @@ function TestAPICall() {
   return (
     <>
         <div>Hello</div>
+        {exhibitList.length > 0 && <div>{exhibitList[0]?.name}</div>}
     </>
   );
 }
