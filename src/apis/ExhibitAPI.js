@@ -20,6 +20,7 @@ export const ExhibitAPI = {
       // signal: cancel ? cancelApiObject[this.getAll.name].handleRequestCancellation().signal : undefined,
     })
 
+    console.log(response)
     return response.data.exhibits
   },
 //   search: async function (name, cancel = false) {
