@@ -3,7 +3,7 @@ import './App.css';
 
 import { Canvas } from '@react-three/fiber';
 import * as THREE from 'three';
-import TestSelector from './components/TestSelector';
+import TestSelector from './components/TestAPICall';
 
 function App() {
   return (

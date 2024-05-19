@@ -1,28 +1,24 @@
 import { useEffect, useState } from "react";
 import { ExhibitAPI } from "../apis/ExhibitAPI";
 
-function TestSelector() {
-  const [exhibitListLoading, setExhibitListLoading] = useState(false);
+function TestAPICall() {
   const [exhibitList, setExhibitList] = useState([]);
 
   useEffect(() => {
-    setExhibitListLoading(true);
-
     ExhibitAPI.getAll()
       .then((exhibitList) => {
         setExhibitList(exhibitList);
       })
-      .finally(() => {
-        console.log(exhibitList)
-        setExhibitListLoading(false);
-      });
   }, []);
+
+  useEffect(() => {
+    console.log(exhibitList)
+  }, [exhibitList]);
 
   return (
     <>
-        <div>Hello.</div>
     </>
   );
 }
 
-export default TestSelector;
+export default TestAPICall;
